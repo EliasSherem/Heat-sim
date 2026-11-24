@@ -1,0 +1,95 @@
+{
+  "assumptions": {
+    "wavelength_nm": 1070.0,
+    "measured_inputs": [],
+    "status": "ILLUSTRATIVE ASSUMPTIONS \u2014 NOT PRINTER RECOMMENDATIONS",
+    "beam_convention": "Gaussian full1/e\u00b2 intensity diameter",
+    "power_unit": "W provisional",
+    "speed_unit": "mm/s provisional",
+    "raduis": "unknown, not used",
+    "substrate": "same17-4PH substrate for both powders"
+  },
+  "bounds": {
+    "beam_um": [
+      60,
+      100
+    ],
+    "absorptivity_17": [
+      0.25,
+      0.5
+    ],
+    "absorptivity_316": [
+      0.25,
+      0.5
+    ],
+    "powder_k_w_mk": [
+      0.5,
+      2
+    ]
+  },
+  "extra": {
+    "rankings": [
+      {
+        "scenario": "range midpoint",
+        "closest_speeds_mm_s": [
+          1400.0
+        ]
+      },
+      {
+        "scenario": "beam_um low",
+        "closest_speeds_mm_s": [
+          1400.0
+        ]
+      },
+      {
+        "scenario": "beam_um high",
+        "closest_speeds_mm_s": [
+          1400.0
+        ]
+      },
+      {
+        "scenario": "absorptivity_17 low",
+        "closest_speeds_mm_s": [
+          1540.0
+        ]
+      },
+      {
+        "scenario": "absorptivity_17 high",
+        "closest_speeds_mm_s": [
+          1260.0
+        ]
+      },
+      {
+        "scenario": "absorptivity_316 low",
+        "closest_speeds_mm_s": [
+          1260.0
+        ]
+      },
+      {
+        "scenario": "absorptivity_316 high",
+        "closest_speeds_mm_s": [
+          1540.0
+        ]
+      },
+      {
+        "scenario": "powder_k_w_mk low",
+        "closest_speeds_mm_s": [
+          1400.0
+        ]
+      },
+      {
+        "scenario": "powder_k_w_mk high",
+        "closest_speeds_mm_s": [
+          1400.0
+        ]
+      }
+    ],
+    "common_closest_speeds_mm_s": [],
+    "rankable_scenarios": 9,
+    "scenario_count": 9,
+    "interpretation": "One-factor endpoints; interactions and statistical confidence are not established. Shared beam/powder conductivity are varied together for the alloys; absorptivities are varied independently."
+  },
+  "failures": [],
+  "wall_runtime_s": 5.238985416996002,
+  "experimental_validation": false
+}

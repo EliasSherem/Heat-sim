@@ -1,0 +1,14 @@
+{
+  "app_url": "http://127.0.0.1:8501/",
+  "real_source_job": "17-4 Test.htmjob",
+  "job_source_sha256": "e6b09ca8d7a16ce5660005537dfe6213dbc1471836fa07d960ca81c9153daa19",
+  "full_build": "results/builds/full-17-4-coarse/manifest.json",
+  "material_transfer": "results/builds/20261115-real-job-material-transfer/report.json",
+  "reproducible_zip": "examples/real-job-study.zip",
+  "numerical_verification": "examples/build-sensitivity-m4.json",
+  "grouping_verification": "examples/full-build-grouping-m4.json",
+  "recoating_s": 3.0,
+  "recoating_provenance": "user approximate estimate",
+  "experimental_validation": false,
+  "new_mjob_path_status": "Referenced /Users/elias/Downloads/job.mjob became unavailable; no unrelated job substituted."
+}

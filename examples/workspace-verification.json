@@ -1,0 +1,369 @@
+{
+  "schema": 1,
+  "audited_at_utc": "2026-11-16T09:05:08.567815+00:00",
+  "verification_kind": "independent inspection of saved calculation artifacts; UI interactions are recorded separately",
+  "run_folder": "results/builds/20261116-105810-c55151",
+  "job": {
+    "name": "Dachshund_lowpoly_15mm_tall_proportional.mjob",
+    "source_sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+    "source_layer_count": 725,
+    "dimensions_mm": [
+      8.076295476189495,
+      30.156272403131727,
+      21.75
+    ],
+    "source_copies": [
+      {
+        "path": "results/builds/20261116-105810-c55151/job/source.mjob",
+        "sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+        "matches_imported_source": true
+      },
+      {
+        "path": "results/imports/5cd20985e62718377dce/source.mjob",
+        "sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+        "matches_imported_source": true
+      }
+    ]
+  },
+  "selected_scope": {
+    "layer_start": 0,
+    "layer_end_exclusive": 110,
+    "source_layers": 110,
+    "continuous_from_layer_zero": true,
+    "warm_start_assumed": false,
+    "vector_count": 428955,
+    "region_counts": [
+      {
+        "section": 0,
+        "region": "infill",
+        "vectors": 471,
+        "powers_w": [
+          120.0
+        ],
+        "speeds_mm_s": [
+          1400.0000000000002
+        ]
+      },
+      {
+        "section": 1,
+        "region": "upper_infill",
+        "vectors": 146,
+        "powers_w": [
+          100.0
+        ],
+        "speeds_mm_s": [
+          1000.0
+        ]
+      },
+      {
+        "section": 2,
+        "region": "lower_infill",
+        "vectors": 878,
+        "powers_w": [
+          110.0
+        ],
+        "speeds_mm_s": [
+          1600.0
+        ]
+      },
+      {
+        "section": 6,
+        "region": "contour",
+        "vectors": 3,
+        "powers_w": [
+          100.0
+        ],
+        "speeds_mm_s": [
+          1000.0
+        ]
+      },
+      {
+        "section": 7,
+        "region": "upper_contour",
+        "vectors": 70,
+        "powers_w": [
+          100.0
+        ],
+        "speeds_mm_s": [
+          900.0
+        ]
+      },
+      {
+        "section": 8,
+        "region": "lower_contour",
+        "vectors": 345,
+        "powers_w": [
+          100.0
+        ],
+        "speeds_mm_s": [
+          1000.0
+        ]
+      },
+      {
+        "section": 16,
+        "region": "support",
+        "vectors": 427042,
+        "powers_w": [
+          200.0
+        ],
+        "speeds_mm_s": [
+          1900.0000000000002
+        ]
+      }
+    ]
+  },
+  "numerical_settings": {
+    "spacing_m": 0.002,
+    "z_spacing_m": 0.0015,
+    "plate_depth_m": 0.003,
+    "max_event_s": 0.1,
+    "requested_frame_interval_s": 2.0,
+    "max_frames": 80
+  },
+  "independently_derived_timing": {
+    "scan_time_s": 16.24204207758978,
+    "jump_time_s": 55.252924508998404,
+    "recoat_time_s": 327.0,
+    "cooldown_time_s": 0.5,
+    "total_time_s": 398.9949665865882,
+    "jump_speed_m_s": 5.0,
+    "jump_settling_s": 9.999999999999999e-05,
+    "between_layer_s": 3.0,
+    "assumption": "Mark time is vector-derived. Jump speed/delay and the user-estimated3s inter-layer pause are not captured machine timings.",
+    "captured_machine_timestamps_available": false,
+    "timing_contains_assumptions": true
+  },
+  "worker_status": "complete",
+  "worker_elapsed_wall_s": 77.98616962500091,
+  "completed_cases": 2,
+  "failed_cases": 0,
+  "total_published_frames": 160,
+  "cases": [
+    {
+      "material": "17-4PH",
+      "case_folder": "results/builds/20261116-105810-c55151/cases/5245eed6f5cd8525cc46818e",
+      "substrate": "17-4PH",
+      "absorptivity": 0.35,
+      "status": "complete",
+      "source_sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+      "layer_start": 0,
+      "layer_end_exclusive": 110,
+      "vector_count": 428955,
+      "frame_count": 80,
+      "first_frame_time_s": 0.0,
+      "last_frame_time_s": 398.9949665865233,
+      "last_source_layer": 109,
+      "timeline_event_count": 492273,
+      "timeline_sha256": "e97176dae02fe8446783d87f0005ba54fd324b3fe2ed10b3ee6e2ed2c7077f76",
+      "event_type_counts": {
+        "0": 110,
+        "1": 428955,
+        "2": 63098,
+        "3": 109,
+        "4": 1
+      },
+      "peak_temperature_k": 597.4920739524293,
+      "peak_temperature_c": 324.34207395242936,
+      "final_saved_max_temperature_k": 401.7148742675781,
+      "absorbed_energy_j": 1119.9591664283057,
+      "independently_calculated_nominal_absorbed_energy_j": 1119.959166949971,
+      "stored_energy_j": 18.472245934886537,
+      "reconstructed_final_energy_from_float32_frames_j": 18.472246089631398,
+      "float32_reconstruction_difference_j": 1.5474486048105973e-07,
+      "boundary_loss_j": 1101.4869204933914,
+      "independent_ledger_residual_j": 2.7789326395577518e-11,
+      "reported_energy_error_fraction": 2.481280320621087e-14,
+      "runtime_s": 37.478360666995286,
+      "thermal_steps": 2154,
+      "grid_shape": [
+        6,
+        17,
+        5
+      ],
+      "material_density_kg_m3": 7780.0,
+      "rendered_temperature_values_checked": 40800,
+      "rendered_values_equal_saved_cell_celsius": true,
+      "independent_checks": {
+        "scan_endpoints_order_sections_z_and_indices_match_import": true,
+        "powers_match_import_and_scales": true,
+        "speeds_match_import_and_scale": true,
+        "scan_duration_matches_length_over_speed": true,
+        "material_table_matches_selected_alloy": true,
+        "all_saved_temperatures_finite": true,
+        "future_cell_max_deviation_from_preheat_k": 6.1035156022626325e-06,
+        "peak_field_matches_integration_peak": true
+      }
+    },
+    {
+      "material": "316L",
+      "case_folder": "results/builds/20261116-105810-c55151/cases/af714bac3ce6934eee2d2815",
+      "substrate": "17-4PH",
+      "absorptivity": 0.35,
+      "status": "complete",
+      "source_sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+      "layer_start": 0,
+      "layer_end_exclusive": 110,
+      "vector_count": 428955,
+      "frame_count": 80,
+      "first_frame_time_s": 0.0,
+      "last_frame_time_s": 398.9949665865233,
+      "last_source_layer": 109,
+      "timeline_event_count": 492273,
+      "timeline_sha256": "e97176dae02fe8446783d87f0005ba54fd324b3fe2ed10b3ee6e2ed2c7077f76",
+      "event_type_counts": {
+        "0": 110,
+        "1": 428955,
+        "2": 63098,
+        "3": 109,
+        "4": 1
+      },
+      "peak_temperature_k": 602.9712315097054,
+      "peak_temperature_c": 329.8212315097054,
+      "final_saved_max_temperature_k": 409.0457763671875,
+      "absorbed_energy_j": 1119.9591664283057,
+      "independently_calculated_nominal_absorbed_energy_j": 1119.959166949971,
+      "stored_energy_j": 21.09696452649935,
+      "reconstructed_final_energy_from_float32_frames_j": 21.096964413520706,
+      "float32_reconstruction_difference_j": -1.1297864332959762e-07,
+      "boundary_loss_j": 1098.8622019017757,
+      "independent_ledger_residual_j": 3.062439191126032e-11,
+      "reported_energy_error_fraction": 2.734420399354867e-14,
+      "runtime_s": 39.18912220800121,
+      "thermal_steps": 2154,
+      "grid_shape": [
+        6,
+        17,
+        5
+      ],
+      "material_density_kg_m3": 7904.0,
+      "rendered_temperature_values_checked": 40800,
+      "rendered_values_equal_saved_cell_celsius": true,
+      "independent_checks": {
+        "scan_endpoints_order_sections_z_and_indices_match_import": true,
+        "powers_match_import_and_scales": true,
+        "speeds_match_import_and_scale": true,
+        "scan_duration_matches_length_over_speed": true,
+        "material_table_matches_selected_alloy": true,
+        "all_saved_temperatures_finite": true,
+        "future_cell_max_deviation_from_preheat_k": 6.1035156022626325e-06,
+        "peak_field_matches_integration_peak": true
+      }
+    }
+  ],
+  "comparison_checks": {
+    "independent_cases_have_identical_stored_exposure_schedule": true,
+    "identical_source_and_grid": true,
+    "final_fields_are_distinct": true,
+    "max_absolute_final_temperature_difference_k": 7.330902099609375,
+    "matching_current_configuration": true,
+    "changed_inputs_rejected_as_stale": {
+      "speed": true,
+      "power": true,
+      "beam": true,
+      "absorptivity": true
+    },
+    "shared_view_temperature_scale_c": [
+      20,
+      1800
+    ],
+    "renderer_uses_exact_saved_cell_temperatures": true
+  },
+  "cancellation_check": {
+    "run_folder": "results/builds/20261116-105618-ba2971",
+    "status": "cancelled",
+    "matching_run_specific_cancel_marker": true,
+    "requested": true,
+    "acknowledged": true,
+    "retained_published_frames": 67,
+    "completed_cases": 0,
+    "latest_saved_physical_time_s": 333.3375670216524,
+    "latest_saved_source_layer": 91
+  },
+  "limitations": [
+    "This is a selected110-layer continuous prefix, not the complete725-layer job.",
+    "The first100layers contain only support-like section16; body regions enter atlayer100.",
+    "2mm lateral/1.5mm vertical voxels and100ms grouping do not resolve microscopic melt pools or defects.",
+    "Power calibration, beam profile, absorptivity, powder and motion/recoat timing remain assumed.",
+    "Energy conservation and different alloy responses do not establish experimental validity or mesh convergence."
+  ],
+  "browser_checks": {
+    "real_file_upload_and_automatic_geometry": true,
+    "no_top_level_tabs": true,
+    "run_action_visible_at_516x723": true,
+    "actual_run_cancelled_and_partial_frames_retained": true,
+    "same_workspace_real_comparison": true,
+    "shared_clock_scrub_s": 200.0,
+    "held_field_time_on_scrub_s": 196.97219869461279,
+    "play_and_pause": true,
+    "playback_speed_changed_to": "0.1x",
+    "point_coordinates_displayed_mm": [
+      51.962,
+      44.922,
+      3.75
+    ],
+    "displayed_point_temperature_checks": [
+      {
+        "material": "17-4PH",
+        "cell_index": [
+          3,
+          5,
+          4
+        ],
+        "stored_temperature_c": 128.56487426757815,
+        "displayed_temperature_c": 128.565,
+        "absolute_display_error_c": 0.0001257324218499889,
+        "saved_time_s": 398.9949665865233
+      },
+      {
+        "material": "316L",
+        "cell_index": [
+          3,
+          5,
+          4
+        ],
+        "stored_temperature_c": 135.89577636718752,
+        "displayed_temperature_c": 135.896,
+        "absolute_display_error_c": 0.00022363281246384759,
+        "saved_time_s": 398.9949665865233
+      }
+    ],
+    "rotation_shared_between_viewers": true,
+    "zoom_checked": true,
+    "layer_cross_section_checked": true,
+    "point_temperature_graph_checked": true,
+    "material_change_invalidates_results": true,
+    "speed_change_invalidates_results": true,
+    "infeasible_workload_rejected_before_launch": true,
+    "saved_full_print_loaded_in_same_viewport": {
+      "run": "results/builds/20261115-151832-57ed6f",
+      "source_layers": 725,
+      "last_source_layer": 724,
+      "last_physical_time_s": 2671.401546450745,
+      "saved_frames": 80
+    },
+    "cancelled_unstarted_comparison_shows_cancelled_not_calculating": true,
+    "screenshots": {
+      "main_workspace": {
+        "path": "/Users/elias/Desktop/Heat-sim/docs/main-workspace-preview.jpg",
+        "size_px": [
+          516,
+          723
+        ],
+        "format": "JPEG"
+      },
+      "thermal_playback": {
+        "path": "/Users/elias/Desktop/Heat-sim/docs/thermal-workspace-preview.jpg",
+        "size_px": [
+          516,
+          723
+        ],
+        "format": "JPEG"
+      }
+    }
+  },
+  "automated_tests": {
+    "passed": 227,
+    "command": ".venv/bin/python -m pytest -q",
+    "warnings": "14 upstream Streamlit NumPy timedelta deprecation warnings"
+  }
+}

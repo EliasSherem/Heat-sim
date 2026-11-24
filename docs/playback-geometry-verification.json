@@ -1,0 +1,91 @@
+{
+  "verification": "complete imported playback geometry; no browser claim",
+  "started_at_utc": "2026-11-16T12:36:25.410557+00:00",
+  "completed_at_utc": "2026-11-16T12:36:35.020275+00:00",
+  "run": "results/builds/20261116-112628-d360db",
+  "source": {
+    "name": "Dachshund_lowpoly_15mm_tall_proportional.mjob",
+    "original_path": "/Users/elias/Downloads/Dachshund_lowpoly_15mm_tall_proportional.mjob",
+    "sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+    "frozen_copy_sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+    "original_sha256": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136"
+  },
+  "source_events": {
+    "raw_timeline_count": 1760194,
+    "emitting_scan_count": 1404024,
+    "layer_count": 725,
+    "first_layer": 0,
+    "last_layer": 724,
+    "sections": {
+      "0": 68103,
+      "1": 60091,
+      "2": 65758,
+      "6": 1404,
+      "7": 12854,
+      "8": 18499,
+      "16": 1177315
+    }
+  },
+  "geometry": {
+    "coverage": "complete",
+    "retained_span_count": 545291,
+    "represented_scan_count": 1404024,
+    "retained_by_section": {
+      "0": 68103,
+      "1": 60091,
+      "2": 65758,
+      "6": 1011,
+      "7": 10881,
+      "8": 14428,
+      "16": 325019
+    },
+    "tolerance_mm": 0.02,
+    "independent_original_endpoints_checked": 2808048,
+    "maximum_original_endpoint_error_mm": 0.01999999999999602,
+    "maximum_merged_span_s": 0.0065955692437000835,
+    "maximum_allowed_merged_span_s": 0.025,
+    "first_scan_time_s": 0.0,
+    "last_scan_time_s": 2670.901546450745,
+    "helper_runtime_s": 2.804108249998535,
+    "all_spans_same_section": true,
+    "all_spans_same_layer": true,
+    "no_disabled_or_jump_events_bridged": true,
+    "all_enabled_scans_represented_once_in_original_order": true
+  },
+  "preview": {
+    "coverage": "complete",
+    "source_scan_count": 1404024,
+    "retained_span_count": 545071,
+    "represented_layer_count": 725,
+    "runtime_s": 2.5527304580027703,
+    "local_geometry_asset": {
+      "url": "/app/static/viewer/64c7a190f540eb5b498b220690fe046fac1910b3ec0adfefd29c6ac91e22026a.bin",
+      "count": 545071,
+      "record_bytes": 40,
+      "format": "tracklab-paths-v1",
+      "sha256": "64c7a190f540eb5b498b220690fe046fac1910b3ec0adfefd29c6ac91e22026a"
+    }
+  },
+  "fields": {
+    "frame_count": 80,
+    "final_time_s": 2671.401546450745,
+    "temperature_samples_compared_exactly_to_saved_arrays": 138720,
+    "preparation_preserved_frozen_artifact_hashes": true,
+    "frame_hash_digest_sha256": "7473ce57216f2f31e83f2b03407166771b13cc645435a3edd8d9de564af3b0ae",
+    "non_frame_hashes": {
+      "job/source.mjob": "5cd20985e62718377dce8b5944725853820ec8806e5d7f398a559a21baf8b136",
+      "timeline.npz": "65da439ad46a1ed02adb7285b6db8bcba7a310808a702c0f6be9799633bd35fd",
+      "manifest.json": "719023211a4f5f544c252a651cfb34b50b47e15131f576fc0e2d410e3e1d48b3",
+      "config.json": "50ca82c7c056314337728ead4c50fe3a814e2234f0aca2f7ef4950da2e34f18b"
+    }
+  },
+  "tests": {
+    "new_focused_tests_passed": 12,
+    "existing_preview_tests_passed": 3,
+    "commands": [
+      ".venv/bin/python -m pytest tests/test_preview_complete_geometry.py tests/test_path_geometry.py -q",
+      ".venv/bin/python -m pytest tests/test_workspace_viewer.py -q -k preview"
+    ]
+  },
+  "browser_verification_performed": false
+}

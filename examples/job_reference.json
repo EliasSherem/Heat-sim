@@ -1,0 +1,493 @@
+{
+  "source_file": "17-4 Test.htmjob",
+  "sha256": "e6b09ca8d7a16ce5660005537dfe6213dbc1471836fa07d960ca81c9153daa19",
+  "interpretation": "Power provisionally interpreted as watts; speed as mm/s; distances as mm. Verify with vendor.",
+  "layer_thickness_assumed_mm": 0.06,
+  "hatch_spacing_assumed_mm": 0.06,
+  "raduis_raw": 0.12,
+  "raduis_interpretation": "Unknown vendor field. Never used as a beam radius or diameter.",
+  "contour_keep_same": true,
+  "presets": [
+    {
+      "preset": "Main body infill",
+      "power_assumed_w": 120,
+      "speed_assumed_mm_s": 1400,
+      "active": true,
+      "source_path": "part.0.property.entity.volume",
+      "note": ""
+    },
+    {
+      "preset": "Top-surface fill",
+      "power_assumed_w": 100,
+      "speed_assumed_mm_s": 1000,
+      "active": true,
+      "source_path": "part.0.property.up.volume",
+      "note": ""
+    },
+    {
+      "preset": "Down-facing fill",
+      "power_assumed_w": 110,
+      "speed_assumed_mm_s": 1600,
+      "active": true,
+      "source_path": "part.0.property.down.volume",
+      "note": ""
+    },
+    {
+      "preset": "Main outer contour",
+      "power_assumed_w": 100,
+      "speed_assumed_mm_s": 1000,
+      "active": true,
+      "source_path": "part.0.property.contour.entity.outer",
+      "note": ""
+    },
+    {
+      "preset": "Separate top outer contour",
+      "power_assumed_w": 100,
+      "speed_assumed_mm_s": 900,
+      "active": true,
+      "source_path": "part.0.property.contour.up.outer",
+      "note": "keep_same=true may override this separate setting"
+    },
+    {
+      "preset": "Additional scan section 16",
+      "power_assumed_w": 200,
+      "speed_assumed_mm_s": 1900,
+      "active": true,
+      "source_path": "part.0.section.16",
+      "note": "Purpose is uncertain; possibly supports. Section presence alone does not prove exposure."
+    },
+    {
+      "preset": "Core preset",
+      "power_assumed_w": 380,
+      "speed_assumed_mm_s": 888,
+      "active": false,
+      "source_path": "part.0.property.entity.core",
+      "note": "DISABLED in source file"
+    },
+    {
+      "preset": "Special sharp contour",
+      "power_assumed_w": 220,
+      "speed_assumed_mm_s": 980,
+      "active": true,
+      "source_path": "part.0.property.contour.entity.sharp",
+      "note": ""
+    }
+  ],
+  "raw_parameter_header": {
+    "thickness": 6,
+    "thickness_real": 0.06,
+    "max_count": 900,
+    "height": 54.0,
+    "use_time": 0,
+    "part": {
+      "0": {
+        "name": "3_2(scaled_0",
+        "property": {
+          "unit": 0.01,
+          "operation": {
+            "translation": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "scaling": [
+              1,
+              1
+            ]
+          },
+          "border": {
+            "xmin": 2531,
+            "xmax": 7530,
+            "ymin": 3501,
+            "ymax": 6499,
+            "zmin": 402,
+            "zmax": 5400
+          },
+          "max_count": 900,
+          "entity": {
+            "strategy": 1,
+            "skip_angle": {
+              "0": {
+                "start": 75,
+                "end": 105
+              },
+              "1": {
+                "start": 0,
+                "end": 30
+              }
+            },
+            "direction": 0,
+            "area": {
+              "width": 20000.0,
+              "height": 10.0,
+              "overlap": 0.07,
+              "random": false,
+              "rotate": {
+                "method": 1,
+                "constdegree": [
+                  92,
+                  109,
+                  126,
+                  55,
+                  72
+                ],
+                "startdegree": 45,
+                "adddegree": 67,
+                "float_degree": 3
+              },
+              "section_sequence": 2,
+              "min_len": 0.0
+            },
+            "volume": {
+              "power": 120,
+              "speed": 1400,
+              "raduis": 0.12,
+              "distance": 0.06,
+              "stagger": false
+            },
+            "optimize": {
+              "min_area": {
+                "enabled": true,
+                "area": 0,
+                "length": 0
+              },
+              "short_line": {
+                "enabled": false,
+                "ratio": 0.5
+              }
+            },
+            "core": {
+              "enabled": false,
+              "wall_thick": 5.0,
+              "power": 380,
+              "speed": 888,
+              "distance": 0.11,
+              "thickness_ratio": 1,
+              "strategy": 0,
+              "area": {
+                "width": 10.0,
+                "height": 10.0,
+                "overlap": 0.1,
+                "rotate": {
+                  "method": 0,
+                  "constdegree": [
+                    92,
+                    109,
+                    126,
+                    55,
+                    72
+                  ],
+                  "startdegree": 0,
+                  "adddegree": 67,
+                  "float_degree": 3
+                },
+                "section_sequence": 0,
+                "min_len": 0.0
+              },
+              "overlap": 0.1,
+              "skip_angle": {
+                "0": {
+                  "start": 75,
+                  "end": 90
+                },
+                "1": {
+                  "start": 173,
+                  "end": 185
+                }
+              }
+            }
+          },
+          "up": {
+            "exposure_count": 1,
+            "exposure_angle": 67,
+            "strategy": 1,
+            "skip_angle": {
+              "0": {
+                "start": 75,
+                "end": 95
+              },
+              "1": {
+                "start": 170,
+                "end": 185
+              }
+            },
+            "direction": 0,
+            "area": {
+              "width": 20.0,
+              "overlap": 0.06,
+              "rotate": {
+                "method": 1,
+                "constdegree": [
+                  90
+                ],
+                "startdegree": 45,
+                "adddegree": 67,
+                "float_degree": 0
+              },
+              "height": 10.0,
+              "section_sequence": 2,
+              "min_len": 0.0
+            },
+            "volume": {
+              "power": 100,
+              "speed": 1000,
+              "raduis": 0.12,
+              "distance": 0.06,
+              "layer_count": 1,
+              "shrunk": 0.0,
+              "min_thick": 0.0,
+              "re_melt": false
+            },
+            "judge_degree": 45,
+            "judge_degree_overlap": 0.05,
+            "layer_count": 4,
+            "min_area": 0.36
+          },
+          "down": {
+            "exposure_count": 1,
+            "exposure_angle": 67,
+            "strategy": 1,
+            "skip_angle": {
+              "0": {
+                "start": 75,
+                "end": 90
+              },
+              "1": {
+                "start": 173,
+                "end": 185
+              }
+            },
+            "direction": 0,
+            "area": {
+              "width": 100.0,
+              "overlap": 0.05,
+              "random": false,
+              "rotate": {
+                "method": 1,
+                "constdegree": [
+                  92,
+                  109,
+                  126,
+                  55,
+                  72
+                ],
+                "startdegree": 45,
+                "adddegree": 67,
+                "float_degree": 3
+              },
+              "height": 10.0,
+              "section_sequence": 2,
+              "min_len": 0.0
+            },
+            "volume": {
+              "power": 110,
+              "speed": 1600,
+              "raduis": 0.12,
+              "distance": 0.06,
+              "layer_count": 1,
+              "shrunk": 0.0,
+              "min_thick": 0.0,
+              "re_melt": false
+            },
+            "judge_degree": 45,
+            "judge_degree_overlap": 0.05,
+            "min_area": 0.36
+          },
+          "contour": {
+            "keep_same": true,
+            "entity": {
+              "random_start": true,
+              "outer": {
+                "enabled": true,
+                "power": 100,
+                "speed": 1000,
+                "raduis": 0.12
+              },
+              "inner": {
+                "count": 0,
+                "dis_inner_outer": 0.05,
+                "dis_inner_inner": 0.2,
+                "dis_inner_infill": 0.06,
+                "power": 140,
+                "speed": 2000,
+                "raduis": 0.12
+              },
+              "sharp": {
+                "enabled": true,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12,
+                "ratio": 1.2,
+                "angle": 60
+              }
+            },
+            "up": {
+              "random_start": true,
+              "outer": {
+                "enabled": true,
+                "power": 100,
+                "speed": 900,
+                "raduis": 0.12
+              },
+              "inner": {
+                "count": 0,
+                "dis_inner_outer": 0.12,
+                "dis_inner_inner": 0.11,
+                "dis_inner_infill": 0.08,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12
+              },
+              "sharp": {
+                "enabled": true,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12,
+                "ratio": 1.2,
+                "angle": 60
+              }
+            },
+            "down": {
+              "random_start": true,
+              "outer": {
+                "enabled": true,
+                "power": 100,
+                "speed": 1000,
+                "raduis": 0.12
+              },
+              "inner": {
+                "count": 0,
+                "dis_inner_outer": 0.12,
+                "dis_inner_inner": 0.11,
+                "dis_inner_infill": 0.08,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12
+              },
+              "sharp": {
+                "enabled": true,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12,
+                "ratio": 1.2,
+                "angle": 60
+              }
+            },
+            "entity_support": {
+              "random_start": false,
+              "outer": {
+                "enabled": true,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12
+              },
+              "inner": {
+                "count": 1,
+                "dis_inner_outer": 0.12,
+                "dis_inner_inner": 0.11,
+                "dis_inner_infill": 0.09,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12
+              },
+              "sharp": {
+                "enabled": true,
+                "power": 220,
+                "speed": 980,
+                "raduis": 0.12,
+                "ratio": 1.2,
+                "angle": 60
+              }
+            }
+          }
+        },
+        "section": {
+          "0": {
+            "power": 120,
+            "speed": 1400,
+            "raduis": 0.12
+          },
+          "1": {
+            "power": 100,
+            "speed": 1000,
+            "raduis": 0.12
+          },
+          "2": {
+            "power": 110,
+            "speed": 1600,
+            "raduis": 0.12
+          },
+          "3": {
+            "power": 140,
+            "speed": 2000,
+            "raduis": 0.12
+          },
+          "4": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "5": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "6": {
+            "power": 100,
+            "speed": 1000,
+            "raduis": 0.12
+          },
+          "7": {
+            "power": 100,
+            "speed": 900,
+            "raduis": 0.12
+          },
+          "8": {
+            "power": 100,
+            "speed": 1000,
+            "raduis": 0.12
+          },
+          "9": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "10": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "11": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "12": {
+            "power": 380,
+            "speed": 888
+          },
+          "13": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "14": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "15": {
+            "power": 220,
+            "speed": 980,
+            "raduis": 0.12
+          },
+          "16": {
+            "power": 200,
+            "speed": 1900,
+            "raduis": 0.12
+          }
+        }
+      }
+    }
+  }
+}

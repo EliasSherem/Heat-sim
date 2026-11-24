@@ -1,0 +1,40 @@
+{
+  "kind": "comparison",
+  "config": {
+    "alloy": "17-4PH",
+    "substrate": "17-4PH",
+    "power_w": 120.0,
+    "speed_m_s": 1.4,
+    "beam_diameter_m": 8e-05,
+    "profile": "gaussian",
+    "absorptivity": 0.35,
+    "power_factor": 1.0,
+    "layer_m": 6e-05,
+    "hatch_m": 6e-05,
+    "initial_k": 353.15,
+    "powder_packing": 0.55,
+    "powder_k_w_mk": 1.0,
+    "mode": "coarse",
+    "domain_scale": 1.0,
+    "dt_scale": 1.0,
+    "convection_w_m2k": 15.0,
+    "emissivity": 0.35,
+    "tracks": 1,
+    "intertrack_delay_s": 5e-05,
+    "cooldown_s": 0.0003
+  },
+  "options": {
+    "absorptivity_17": 0.35,
+    "absorptivity_316": 0.35
+  },
+  "assumptions": {
+    "wavelength_nm": 1070.0,
+    "measured_inputs": [],
+    "status": "ILLUSTRATIVE ASSUMPTIONS \u2014 NOT PRINTER RECOMMENDATIONS",
+    "beam_convention": "Gaussian full1/e\u00b2 intensity diameter",
+    "power_unit": "W provisional",
+    "speed_unit": "mm/s provisional",
+    "raduis": "unknown, not used",
+    "substrate": "same17-4PH substrate for both powders"
+  }
+}
